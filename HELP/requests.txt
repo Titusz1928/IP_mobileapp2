@@ -1,0 +1,40 @@
+==================================================
+-chats: POST //loads chats
+
+java => user_id => python
+
+java <=message,email_values,prenume_values,data_values,last_msg_values,id_conv_values<=python
+
+! we can get data_values,last_msg_values from mesaje table
+
+===================================================
+-search: POST //loads searched chats
+
+java => searched_email, user_id => python
+
+java <=message,email_values,prenume_values,data_values,last_msg_values,id_conv_values<=python
+
+! id_conv_values has -1 if conversation doesnt exist yet
+
+======================================================
+
+              
+!to use these below we need values like the email_values =>receiver_email and id_conv_values=>id_conversation
+
+==================================================
+-send: POST //sends message
+
+!response message is just a random response text
+
+java => message (user input),user_id,receiveremail =>python
+java <= responsemessage <=python !we mainly work in the database here
+
+======================================================
+
+-mesaje: POST //loads messages
+
+java => id_conversation,user_id =>python
+java <=message,id_sender_values,continut_values,data_values<=python
+
+!user_id is used to check if card is on left or right side
+==================================================

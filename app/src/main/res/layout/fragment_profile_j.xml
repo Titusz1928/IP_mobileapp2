@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/PRO_ScrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".controller.ProfileFragmentJ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background_spring">
+
+    <LinearLayout
+        android:id="@+id/svLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/llTopCardView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/cv1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tcvConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tcvTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="@string/PROtcvTitleText"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/llDataCardView"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/dcvRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableLayout
+                    android:id="@+id/rlDataTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/dtlTensArtRow"
+                        android:background="@color/lightgreen"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/tarInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/bordered_lightgreen"
+                            android:padding="10dp"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROtarInfoTextView">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tarContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/white_black_border"
+                            android:padding="10dp"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROtarContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlPulsRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/pInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROpInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/pContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROpContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlTempCorpRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/tcInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROtcInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tcContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROtcContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlGreuRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/grInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROgrInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/grContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROgrContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlGlicerRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/glInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROglInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/glContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROglContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlLuminRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/luInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROluInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/luContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROluContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlTempAmbRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/tambInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROtambInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tambContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROtambContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlPrezGazRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/pgInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROpgInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/pgContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROpgContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlUmidRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/umidInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROumidInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/umidContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROumidContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/dtlProxRow"
+                        android:background="@color/lightgreen">
+
+                        <TextView
+                            android:id="@+id/proxInfoTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:background="@drawable/bordered_lightgreen"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROproxInfoTextView" >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/proxContentTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:background="@drawable/white_black_border"
+
+                            android:textSize="24sp"
+                            android:text="@string/PROproxContentTextView" >
+
+                        </TextView>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/llActualizareCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/acvConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_subtle_border">
+
+                <TextView
+                    android:id="@+id/acvTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.08"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.469"
+                    android:background="@drawable/bottom_border_on_white"
+
+                    android:textSize="24sp"
+                    android:text="@string/PROacvTitleText" />
+
+                <ImageView
+                    android:id="@+id/acvImageView"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.766"
+                    app:layout_constraintStart_toEndOf="@+id/acvTitleText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.509"
+                    android:src="@drawable/icon_actualizare"
+                    android:contentDescription="@string/PROacvImageView"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/llVizualizareCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vcvConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_subtle_border">
+
+                <TextView
+                    android:id="@+id/vcvTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.08"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.469"
+                    android:background="@drawable/bottom_border_on_white"
+
+                    android:text="Vizualizare date"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/vcvImageView"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_visualization"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.852"
+                    app:layout_constraintStart_toEndOf="@+id/vcvTitleText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.363" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/llBottomCardView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:cardCornerRadius="0dp">
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

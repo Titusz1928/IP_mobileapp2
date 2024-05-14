@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".controller.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.MainActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ResetPasswordActivity1J"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ResetPasswordActivity2J"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ResetPasswordActivity3J"
+            android:exported="false" />
+        <activity
+            android:name=".controller.MenuActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ChangeInformationJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.RecommendationActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.FisaMedicalaWebActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.AlarmsActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ActualizareActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VizualizareActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.SelectedChatJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ChangePasswordActivityJ"
+            android:exported="false" />
+        <activity
+            android:name=".controller.FisaMedicalaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

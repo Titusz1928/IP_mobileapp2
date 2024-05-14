@@ -1,0 +1,5 @@
+MessageCardView = custom message cardview, used to make th ecardviews WRAP_CONTENT but max 700 dp
+
+EmailNamePair = originally contained only email and prenume, later i added some other things 
+
+MessageBox = objects containing the data of a message = continut, date, who sent it

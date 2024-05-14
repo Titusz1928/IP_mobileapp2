@@ -1,0 +1,13 @@
+1. we enter chatfragment ->2
+
+2. chats loaded ->3,4
+
+ 3. posibility to search -> other chats get loaded ->2
+
+ 4. press chat ->5
+
+ 5. messages get loaded, it gets refreshed every 10 seconds ->1,6
+ 
+ 6. send messages
+ 
+ 

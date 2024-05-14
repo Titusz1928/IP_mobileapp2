@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisa Medicala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8F5E9; /* Verde deschis */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 90%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Center container */
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .change-icon {
+            color: black;
+            cursor: pointer;
+        }
+
+        .navbar {
+            background-color: #333; /* Navbar background color */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Padding around navbar */
+            position: fixed; /* Fix navbar position */
+            width: 100%; /* Make navbar take full width */
+            top: 0; /* Align navbar to the top */
+            z-index: 1000; /* Ensure navbar is above other content */
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            width: 40px; /* Logo width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .navbar-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-menu li {
+            margin-right: 20px; /* Spacing between menu items */
+        }
+
+        .navbar-menu li:last-child {
+            margin-right: 0; /* Remove margin from last menu item */
+        }
+
+        .navbar-menu li a {
+            color: #fff; /* Text color for menu items */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+        }
+
+        .navbar-menu li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Stiluri pentru iconița de chat */
+        .chat-icon {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div style="padding-top: 4%;">
+    </div>
+    <div class="container">
+        <h1>Fisa Medicala</h1>
+        <div>
+            <h2>Detalii Personale</h2>
+            <table>
+                <tr>
+                    <th>Nume</th>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <th>Prenume</th>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <th>CNP</th>
+                    <td>1234567890123</td>
+                </tr>
+                <tr>
+                    <th>Vârstă</th>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>Adresa</th>
+                    <td>Str. Principală, Orașul Mare, Județul Mic</td>
+                </tr>
+                <tr>
+                    <th>Număr Telefon</th>
+                    <td>0722123456</td>
+                </tr>
+                <tr>
+                    <th>Adresa Email</th>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <th>Profesie</th>
+                    <td>Medic</td>
+                </tr>
+                <tr>
+                    <th>Loc de Muncă</th>
+                    <td>Spitalul Central</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <h2 style="margin-right: 10px;">Consultatii</h2>
+                    <i class="fas fa-plus-circle change-icon" style="font-size: 24px;"></i>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Diagnostic</th>
+                    <th>Tratament</th>
+                    <th>Recomandare</th>
+                </tr>
+                <tr>
+                    <td>2024-03-15</td>
+                    <td>Gripa</td>
+                    <td>Medicație antivirală</td>
+                    <td>Repaus la pat</td>
+                </tr>
+                <tr>
+                    <td>2024-02-20</td>
+                    <td>Dureri abdominale</td>
+                    <td>Analgezice</td>
+                    <td>Recomandare pentru consult gastroenterologic</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<resources>
+
+    <!-- String resource for the app name -->
+    <string name="app_name">IP_demo1</string>
+
+    <!-- Other -->
+    <string name="background_image_description">Background Image</string>
+
+    <string name="reset_pswd_info"> Pentru a-ți reseta parola, trebuie să deschizi link-ul trimis la adresa de email specificată mai jos!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">ACASĂ</string>
+    <string name="profile_fragment">PROFIL</string>
+    <string name="chat_fragment">CHAT</string>
+    <string name="settings_fragment">SETĂRI</string>
+
+    <string name="recom_test"> Gestionarea stresului și odihna adecvată: Încearcă să gestionezi stresul prin tehnici de relaxare,
+        cum ar fi meditația sau respirația profundă.
+        Asigură-te că dormi suficient pentru a-ți menține echilibrul hormonal și nivelul de energie.
+        Meditația și respirația profundă sunt doar două dintre tehnicile pe care le poți încerca pentru a-ți calma mintea și corpul în timpul momentelor tensionate.</string>
+
+    <string name="long_text">În calitate de medic, îmi doresc să subliniez importanța prioritizării sănătății tale.
+Este esențial să acorzi atenție semnelor și simptomelor care pot indica probleme de sănătate, și să nu amâni vizitele la medic.
+Prevenția este cheia pentru menținerea unei stări optime de sănătate,
+iar adoptarea unui stil de viață sănătos poate avea un impact semnificativ asupra bunăstării tale generale. Nu ezita să consulți
+un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta.
+Împreună, putem lucra pentru a asigura că te afli pe drumul cel mai bun către o viață sănătoasă și fericită.
+    În calitate de medic, îmi doresc să subliniez importanța prioritizării sănătății tale.
+Este esențial să acorzi atenție semnelor și simptomelor care pot indica probleme de sănătate, și să nu amâni vizitele la medic.
+Prevenția este cheia pentru menținerea unei stări optime de sănătate,
+iar adoptarea unui stil de viață sănătos poate avea un impact semnificativ asupra bunăstării tale generale. Nu ezita să consulți
+un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta.
+Împreună, putem lucra pentru a asigura că te afli pe drumul cel mai bun către o viață sănătoasă și fericită.
+    În calitate de medic, îmi doresc să subliniez importanța prioritizării sănătății tale.
+Este esențial să acorzi atenție semnelor și simptomelor care pot indica probleme de sănătate, și să nu amâni vizitele la medic.
+Prevenția este cheia pentru menținerea unei stări optime de sănătate,
+iar adoptarea unui stil de viață sănătos poate avea un impact semnificativ asupra bunăstării tale generale. Nu ezita să consulți
+un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta.
+Împreună, putem lucra pentru a asigura că te afli pe drumul cel mai bun către o viață sănătoasă și fericit</string>
+
+    <string name="recom_title"> Gestionarea stresului </string>
+
+
+    <!-- Main Layout (login) -->
+    <string name="MAINllLogoImageView"> Logo Image </string>
+    <string name="MAINllArrowImageView"> Arrow Image </string>
+
+    <string name="MAINifcvTitleText"> Bine ai venit! </string>
+
+    <string name="MAINifcvLoginButton"> Conectare </string>
+    <string name="MAINtilPassword"> Parolă </string>
+    <string name="MAINtilEmail"> Email </string>
+    <string name="MAINifcvForgotPasswordText"> Am uitat parola </string>
+    <string name="MAINifcvRegisterButton"> Registrare </string>
+    <string name="MAINifcvRememberCheckbox"> Ține-mă minte </string>
+    <string name="MAINifcvCBPasswordlImage"> Parolă corectă </string>
+    <string name="MAINifcvCBEmailImage"> Email corect </string>
+    <string name="MAINllVersionTextView"> Version 0.11 </string>
+    <string name="MAINllInfoTextView"> Vitalis - 2024/05/08 </string>
+
+    <!-- Registrare -->
+    <string name="REGtcvTitleText"> Registrare </string>
+    <string name="REGtcvBackText"> Înapoi </string>
+
+    <string name="REGtlAccountSectionText">Date cont</string>
+    <string name="REGtlPersonalSectionText">Date personale</string>
+
+    <string name="REGtilEmail"> Email </string>
+    <string name="REGtilPassword"> Parolă </string>
+    <string name="REGtilPasswordConfirm"> Confirmare parolă </string>
+    <string name="REGtlNumeContentHint"> Nume </string>
+    <string name="REGtlPrenumeContentHint"> Prenume </string>
+    <string name="REGtlAgeHint"> Vârstă </string>
+    <string name="REGtlPhoneHint"> Tel </string>
+
+    <string name="REGtlCNPHint"> CNP </string>
+
+    <string name="REGtlCountryHint"> Țară </string>
+    <string name="REGtlJudetHint"> Județ </string>
+    <string name="REGtlCityHint"> Oraș </string>
+    <string name="REGtlStreetHint"> Stradă </string>
+
+    <string name="REGtlProfHint"> Profesie </string>
+    <string name="REGtlLocMunHint"> Loc de muncă </string>
+
+
+    <!-- Reset password Layout (specify email) -->
+    <string name="RPAicvTitleText"> Resetare parolă </string>
+    <string name="RPAifcvInformationText"> Te rog să introduci adresa de email asociată contului tău! </string>
+    <string name="RPAifcvEmailEdit"> Email </string>
+    <string name="RPAifcvBackButton"> Înapoi </string>
+    <string name="RPAifcvConfirmButton"> Confirmare </string>
+
+    <!-- Reset password 2 Layout (code) -->
+    <string name="RPA2tcvTitleText"> Resetare parolă </string>
+    <string name="RPA2ifcvInformationText"> Am trimis un cod pe adresa ta de email! Introdu-l pentru a continua. </string>
+    <string name="RPA2ifcvCodEdit"> Cod </string>
+    <string name="RPA2ifcvBackButton"> Înapoi </string>
+    <string name="RPA2ifcvConfirmButton"> Confirmare </string>
+
+    <!-- Reset password 3 Layout (confirm) -->
+    <string name="RPA3tcvTitleText"> Resetare parolă </string>
+    <string name="RPA3tilConfirm"> Confirmare parolă </string>
+    <string name="RPA3tilNew"> Parolă nouă </string>
+    <string name="RPA3ifcvConfirmButton"> Resetare </string>
+    <string name="RPA3ifcvBackButton"> Înapoi </string>
+
+
+    <!-- Home -->
+    <!-- Home Layout-->
+
+    <string name="HOMtcvLogoImageView">Logo Image</string>
+    <string name="HOMtcvInformationTextView">Informație adițională</string>
+    <string name="HOMtcvGreeetingTextView">Bun venit, %s!</string>
+
+    <string name="HOMttrTitleTextView">Doctorul meu</string>
+
+    <string name="HOMtextView_doctor_nameT"> Nume </string>
+    <string name="HOMtextView_doctor_nameC"> John Doe </string>
+    <string name="HOMtextView_doctor_telT"> Telefon </string>
+    <string name="HOMtextView_doctor_telC"> 0722123456 </string>
+    <string name="HOMtextView_doctor_emailT"> Email </string>
+    <string name="HOMtextView_doctor_emailC"> john.doe@example.com </string>
+
+    <string name="HOMrtrTitleText">Recomandări</string>
+    <string name="HOMDoctorInfoButtonImage">doctor info display button</string>
+
+    <string name="HOMr1cvTitleTextView">Gripă</string>
+    <string name="HOMr1cvDateTextView">11/04/2024</string>
+    <string name="HOMr2cvTitleTextView">Titlu</string>
+    <string name="HOMr2cvDateTextView">12/04/2024</string>
+    <string name="HOMr3cvTitleTextView">Titlu</string>
+    <string name="HOMr3cvDateTextView">13/04/2024</string>
+
+    <string name="HOMfmcvTitleText">Fișa medicală</string>
+    <string name="HOMfmcvImageViewDescription">fișa medicala icon</string>
+
+    <string name="HOMacvTitleText">Alarme</string>
+    <string name="HOMacvImageViewDescription">alarme icon inactive</string>
+    <string name="HOMacvImageViewDescription2">alarme icon active</string>
+
+    <!-- Recommandations Layout-->
+    <string name="RECirTitleText"> Gripă </string>
+    <string name="RECirDateText"> 11/04/2024 </string>
+    <string name="RECtcvTratamnentText"> Medicație antivirală </string>
+    <string name="RECsvDescriptionText"> repaus la pat </string>
+
+
+    <!-- Alarme Layout -->
+    <string name="ALAcvTopText"> Alarme </string>
+
+    <string name="ALAtrGazText"> Gaz </string>
+    <string name="ALAtrCresTempText"> Creșterea temperaturii </string>
+    <string name="ALAtrParFizioText"> Parametrii fiziologici </string>
+    <string name="ALAtrAnomaliiText"> Anomalii </string>
+    <string name="ALAtrSistemCazutText"> Sistem căzut </string>
+
+    <!-- Profile -->
+
+    <!--Profile Layout-->
+    <string name="PROtcvTitleText">Datele mele</string>
+
+    <string name="PROtarInfoTextView">Tensiune arterială</string>
+    <string name="PROtarContentTextView"> 0 </string>
+    <string name="PROpInfoTextView">Puls</string>
+    <string name="PROpContentTextView"> 0 </string>
+    <string name="PROtcInfoTextView">T. corporală</string>
+    <string name="PROtcContentTextView"> 0.0 </string>
+    <string name="PROgrInfoTextView">Greutate</string>
+    <string name="PROgrContentTextView"> 0.0 </string>
+    <string name="PROglInfoTextView">Glicernie</string>
+    <string name="PROglContentTextView"> 0 </string>
+    <string name="PROluInfoTextView">Lumina</string>
+    <string name="PROluContentTextView"> NU </string>
+    <string name="PROtambInfoTextView">T. ambientală</string>
+    <string name="PROtambContentTextView"> 0.0 </string>
+    <string name="PROpgInfoTextView">Prezență gaz</string>
+    <string name="PROpgContentTextView"> NU </string>
+    <string name="PROumidInfoTextView">Umiditate</string>
+    <string name="PROumidContentTextView"> NU </string>
+    <string name="PROproxInfoTextView">Proximitate</string>
+    <string name="PROproxContentTextView"> NU </string>
+
+    <string name="PROacvTitleText">Actualizare date</string>
+    <string name="PROacvImageView">Actualizare icon</string>
+
+    <string name="PROvcvTitleText">Vizualizare date</string>
+    <string name="PROvcvImageView">Vizualizare icon</string>
+
+
+    <!-- Actualizare Layout -->
+    <string name="ACTtopRowText">  Actualizare date </string>
+
+    <string name="ACTtrTensiuneArterialaText">  Tensiune arteriala </string>
+    <string name="ACTtrTemperaturaCorporalaText"> Temperatura corporala </string>
+    <string name="ACTtrGreutateText"> Greutate </string>
+    <string name="ACTtrGlicernieText"> Glicernie </string>
+
+    <string name="ACTcvSaveButton"> Salvează </string>
+
+    <!--Visualization Layout-->
+    <string name="VISttrTitleText">Vizualizare date</string>
+
+    <string name="VISbcvBackButton">back arrow</string>
+
+    <!-- Chat -->
+    <!-- Chat list-->
+    <string name="CHAttrTitleTextView">Chat</string>
+    <string name="CHAstrEditText">Caută</string>
+
+    <string name="CHAc1cvTextView">Mesaje sistem</string>
+    <string name="CHAc2cvTextView">John Doe</string>
+    <string name="CHAc3cvTextView">John Doe</string>
+    <string name="CHAc4cvTextView">John Doe</string>
+    <string name="CHAc5cvTextView">John Doe</string>
+
+    <!-- Selected chat -->
+    <string name="SCHm1cvContinutTextView">.................................................................................................................</string>
+    <string name="SCHm1cvTimeTextView">23:10</string>
+
+    <string name="SCHm2cvContinutTextView">.</string>
+    <string name="SCHm2cvTimeTextView">23:13</string>
+
+    <string name="SCHm3cvContinutTextView">........................................................</string>
+    <string name="SCHm3cvTimeTextView">23:15</string>
+
+    <string name="SCHm4cvContinutTextView">....................</string>
+    <string name="SCHm4cvTimeTextView">23:17</string>
+
+    <string name="SCHm5cvContinutTextView">Nested Scroll test</string>
+    <string name="SCHm5cvTimeTextView">23:17</string>
+
+    <string name="SCHmscvMessageEditText">Mesaj</string>
+
+    <string name="SCHbcvBackButton">back arrow</string>
+
+    <!--Settings-->
+
+    <string name="SETtcvTitleText">Setări</string>
+
+    <string name="SETetStrada">Str. Principală</string>
+    <string name="SETetCity">Orașul Mare</string>
+    <string name="SETetJudet">Județul Mic</string>
+    <string name="SETetTelefon">0722123456</string>
+    <string name="SETetPrenume">John</string>
+    <string name="SETetNume">Doe</string>
+
+    <string name="SETimageView_nume">edit nume</string>
+    <string name="SETimageView_prenume">edit prenume</string>
+    <string name="SETimageView_telefon">edit telefon</string>
+    <string name="SETimageView_judet">edit judet</string>
+    <string name="SETimageView_oras">edit oras</string>
+    <string name="SETimageView_strada">edit strada</string>
+
+    <string name="SETrImageView">romanian</string>
+    <string name="SETeImageView">english</string>
+    <string name="SEThImageView">hungarian</string>
+
+    <string name="SETresetpasswordButton">Schimbare parolă</string>
+    <string name="SETlogoutButton">Deconectare</string>
+
+
+    <!-- Change Information Layout -->
+    <string name="CINtrTopText"> Actualizare date </string>
+
+    <string name="CINtrTitleCurrentText"> Numele curent: </string>
+    <string name="CINtrContentCurrentText"> Doe </string>
+    <string name="CINtrTitleNewText"> Numele nouă: </string>
+    <string name="CINbcvSaveButton"> Salvează </string>
+
+    <!-- Change Password Layout-->
+    <string name="CPAtcvTitleText"> Schimbare Parolă </string>
+
+    <string name="CPAtilOld"> Parolă veche </string>
+    <string name="CPAtilNew"> Parolă nouă </string>
+    <string name="CPAtilConfirm"> Confirmare parolă </string>
+
+    <string name="CPAifcvConfirmButton"> Confirmare </string>
+    <string name="CPAifcvBackButton"> Înapoi </string>
+
+    <!-- URLs-->
+    <string name="URLregistration"> http://192.168.1.247:4000/registration</string>
+    <string name="URLlogin"> http://192.168.1.247:4000/login </string>
+    <string name="URLchats"> http://192.168.1.247:4000/chats </string>
+    <string name="URLsearch"> http://192.168.1.247:4000/search </string>
+    <string name="URLmessages"> http://192.168.1.247:4000/mesaje </string>
+    <string name="URLsend"> http://192.168.1.247:4000/send </string>
+
+
+</resources>
