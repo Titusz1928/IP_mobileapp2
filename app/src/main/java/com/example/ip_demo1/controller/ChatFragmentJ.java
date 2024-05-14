@@ -25,8 +25,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.ip_demo1.R;
+import com.example.ip_demo1.model.Chat;
 import com.example.ip_demo1.model.EmailNamePair;
 import com.example.ip_demo1.model.UserData;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -42,13 +44,14 @@ public class ChatFragmentJ extends Fragment {
     String url;
     private static final String TAG = "MyTag";
 
+    private Gson gson = new Gson();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_chat_j2, container, false);
 
-        //CardView to_s_chat = view.findViewById(R.id.llChat2CardView);
 
         //declaring buttons
         ImageView searchButton = view.findViewById(R.id.strImageView);
@@ -56,13 +59,6 @@ public class ChatFragmentJ extends Fragment {
 
         LinearLayout parentLayout = view.findViewById(R.id.cltrLinearLayout);
 
-//        to_s_chat.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(requireContext(), SelectedChatJ.class);
-//                requireContext().startActivity(intent);
-//            }
-//        });
 
         //LOADING IN EXISTING CHATS
         url=getString(R.string.URLchats);
@@ -82,6 +78,15 @@ public class ChatFragmentJ extends Fragment {
                     public void onResponse(JSONObject response) {
                         // Handle successful response
                         Log.d(TAG, "Response: " + response.toString());
+
+                        Chat chat = new Chat();
+
+                        String chatJsonString = response.optString("chat");
+                        if (chatJsonString != null) {
+                            // Deserialize the Chat object from the JSON string
+                            chat = deserializeChat(chatJsonString);
+                        }
+
 
                         String message = response.optString("message", "Unknown message");
 
@@ -460,6 +465,8 @@ public class ChatFragmentJ extends Fragment {
         return cardView;
     }
 
-
+    public Chat deserializeChat(String jsonString) {
+        return gson.fromJson(jsonString, Chat.class);
+    }
 
 }

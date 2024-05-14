@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.ip_demo1"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -45,6 +45,8 @@ dependencies {
     implementation("androidx.activity:activity:1.8.0")
 
     implementation("com.android.volley:volley:1.2.1")
+
+    implementation("com.google.code.gson:gson:2.10.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
