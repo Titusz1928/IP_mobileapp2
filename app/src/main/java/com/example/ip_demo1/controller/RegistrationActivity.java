@@ -94,6 +94,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 userData.put("strada",street);
                 userData.put("profesie", prof);
                 userData.put("loc_munca", locmun);
+                userData.put("parola",JSONObject.NULL);
                 userData.put("tip_acces","pacient");
 
             } catch (JSONException e) {
@@ -111,11 +112,8 @@ public class RegistrationActivity extends AppCompatActivity {
                             // Handle successful response
                             Log.d(TAG, "Response: " + response.toString());
 
-                            String message = response.optString("message", "Unknown message");
-
-
                             // Display the message in a Toast
-                            Toast.makeText(RegistrationActivity.this, message, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistrationActivity.this, getString(R.string.REGmessage), Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
                             startActivity(intent);
 
@@ -126,7 +124,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     // Handle error response
                     Log.e(TAG, "Volley error: " + error.getMessage());
-                    Toast.makeText(RegistrationActivity.this, "Error occurred!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistrationActivity.this, getString(R.string.REGerrorMessage), Toast.LENGTH_SHORT).show();
                 }
             });
 

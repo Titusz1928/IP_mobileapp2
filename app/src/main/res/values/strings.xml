@@ -83,6 +83,9 @@ un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta
     <string name="REGtlProfHint"> Profesie </string>
     <string name="REGtlLocMunHint"> Loc de muncă </string>
 
+    <string name="REGmessage"> "Înregistrare cu succes" </string>
+    <string name="REGerrorMessage"> "Eroare" </string>
+
 
     <!-- Reset password Layout (specify email) -->
     <string name="RPAicvTitleText"> Resetare parolă </string>
