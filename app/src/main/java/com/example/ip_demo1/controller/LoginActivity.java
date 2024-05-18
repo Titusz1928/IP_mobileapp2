@@ -15,7 +15,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.ip_demo1.R;
-import com.example.ip_demo1.model.UserData;
+import com.example.ip_demo1.model.User;
+import com.example.ip_demo1.model.UserSingleton;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONException;
@@ -43,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
             buttonLogin.setEnabled(false);
             buttonLogin.setClickable(false);
 
-            url=getString(R.string.URLlogin);
+            url=getString(R.string.CLOUD_SERVER)+getString(R.string.LOGIN);
 
             //creating JSON object
             JSONObject userLoginData = new JSONObject();
@@ -62,36 +65,34 @@ public class LoginActivity extends AppCompatActivity {
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
-                            // Handle successful response
-                            Log.d(TAG, "Response: " + response.toString());
 
-                            String message = response.optString("message", "Unknown message");
+                            ObjectMapper objectMapper = new ObjectMapper();
 
-                            // Display the message in a Toast
-                            Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
-                            if(message.equals("Welcome!")) {
+                            String jsonResponse = response.toString();
+                            Log.d(TAG, "JSON Response: " + jsonResponse);
 
-                                //using UserDataManager Singleton object to store the user data
-                                UserData userDataManager = UserData.getInstance();
 
-                                userDataManager.setId(Integer.parseInt(response.optString("id","Unknown")));
-                                userDataManager.setNume(response.optString("nume", "Unknown"));
-                                userDataManager.setPrenume(response.optString("prenume", "Unknown"));
-                                userDataManager.setVarsta(response.optString("varsta", "Unknown"));
-                                userDataManager.setCnp(response.optString("cnp", "Unknown"));
-                                userDataManager.setStrada(response.optString("strada", "Unknown"));
-                                userDataManager.setOras(response.optString("oras", "Unknown"));
-                                userDataManager.setJudet(response.optString("judet", "Unknown"));
-                                userDataManager.setTara(response.optString("tara", "Unknown"));
-                                userDataManager.setNumar_telefon(response.optString("numar_tel", "Unknown"));
-                                userDataManager.setProfesie(response.optString("profes", "Unknown"));
-                                userDataManager.setLoc_munca(response.optString("loc_mun", "Unknown"));
-                                userDataManager.setAdresa_email(response.optString("adresa_email", "Unknown"));
-                                userDataManager.setParola(response.optString("parola", "Unknown"));
+                            User user = null;
+                            try {
+                                user = objectMapper.readValue(jsonResponse, User.class);
+                                Log.d(TAG,user.toString());
+                            } catch (JsonProcessingException e) {
+                                throw new RuntimeException(e);
+                            }
+                            Log.d(TAG,user.toString());
+
+
+                            if (!response.optString("id", "Unknown").equals("-1")) {
+                                UserSingleton.getInstance().setUser(user);
+
+                                // Display the message in a Toast
+                                Toast.makeText(LoginActivity.this,getString(R.string.MAINloginGreeting), Toast.LENGTH_SHORT).show();
 
                                 //going to MenuActivity (Home Fragment)
                                 Intent intent = new Intent(LoginActivity.this, MenuActivityJ.class);
                                 startActivity(intent);
+                            }else{
+                                Toast.makeText(LoginActivity.this,getString(R.string.ERROR),Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, new Response.ErrorListener() {

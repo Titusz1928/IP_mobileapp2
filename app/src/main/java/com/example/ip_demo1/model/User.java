@@ -202,4 +202,25 @@ public class User implements UserContext
     private String workplace;
     private String password;
     private AccessType accessType;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", cnp='" + cnp + '\'' +
+                ", age=" + age +
+                ", street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", county='" + county + '\'' +
+                ", country='" + country + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", profession='" + profession + '\'' +
+                ", workplace='" + workplace + '\'' +
+                ", password='" + password + '\'' +
+                ", accessType=" + accessType +
+                '}';
+    }
 }

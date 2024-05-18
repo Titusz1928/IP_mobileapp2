@@ -50,4 +50,13 @@ public class Message
     private String content;
     private LocalDateTime sendingDate;
     private final static String DATE_FORMAT = "EEE, dd MMM yyyy HH:mm:ss zzz";
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "sendingUserId=" + sendingUserId +
+                ", content='" + content + '\'' +
+                ", sendingDate=" + sendingDate +
+                '}';
+    }
 }

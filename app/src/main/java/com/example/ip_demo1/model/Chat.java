@@ -37,4 +37,13 @@ public class Chat
     private Integer id;
     private UserContext otherUser;
     private List<Message> messages;
+
+    @Override
+    public String toString() {
+        return "Chat{" +
+                "id=" + id +
+                ", otherUser=" + otherUser +
+                ", messages=" + messages +
+                '}';
+    }
 }

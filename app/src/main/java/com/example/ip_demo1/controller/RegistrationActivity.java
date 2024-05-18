@@ -18,6 +18,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.ip_demo1.R;
 import com.google.android.material.textfield.TextInputEditText;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -77,7 +78,6 @@ public class RegistrationActivity extends AppCompatActivity {
             String street = streetEditText.getText().toString();
             String prof = profEditText.getText().toString();
             String locmun = locmunEditText.getText().toString();
-            // Get other user data similarly
 
             // Create a JSON object with user data
             JSONObject userData = new JSONObject();
@@ -95,29 +95,40 @@ public class RegistrationActivity extends AppCompatActivity {
                 userData.put("profesie", prof);
                 userData.put("loc_munca", locmun);
                 userData.put("parola",JSONObject.NULL);
-                userData.put("tip_acces","pacient");
+                userData.put("tip_acces","PACIENT");
 
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             Log.d(TAG, userData.toString());
 
-            url=getString(R.string.URLregistration);
+            url=getString(R.string.CLOUD_SERVER)+getString(R.string.SIGN_UP);
 
             //sending the request
             JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, userData,
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
-                            // Handle successful response
-                            Log.d(TAG, "Response: " + response.toString());
+                            try {
+                                Log.d(TAG,String.valueOf(response));
+                                // Extract message and status code from the JSON object
+                                String message = response.getString("message");
 
-                            // Display the message in a Toast
-                            Toast.makeText(RegistrationActivity.this, getString(R.string.REGmessage), Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
-                            startActivity(intent);
+                                // Display the message in a Toast
+                                Toast.makeText(RegistrationActivity.this, message, Toast.LENGTH_SHORT).show();
 
+                                // Check the status code and perform appropriate actions
 
+                                // Do something if status code is 201 (Created)
+                                Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
+                                startActivity(intent);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                // Handle JSON parsing error
+                                Log.d(TAG,"response extraction error");
+                                Toast.makeText(RegistrationActivity.this, getString(R.string.REGerrorMessage), Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }, new Response.ErrorListener() {
                 @Override

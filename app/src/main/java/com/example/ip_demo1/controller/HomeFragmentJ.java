@@ -13,7 +13,8 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.ip_demo1.R;
-import com.example.ip_demo1.model.UserData;
+import com.example.ip_demo1.model.User;
+import com.example.ip_demo1.model.UserSingleton;
 
 public class HomeFragmentJ extends Fragment {
 
@@ -25,11 +26,12 @@ public class HomeFragmentJ extends Fragment {
 
         TextView tcvGreetingTextView = view.findViewById(R.id.tcvGreetingTextView);
 
-        // Get the instance of UserDataManager
-        UserData userDataManager = UserData.getInstance();
+        User user = UserSingleton.getInstance().getUser();
+
+
 
         // Get the name of the user
-        String userName = userDataManager.getPrenume();
+        String userName = user.getFirstName();
 
 
         // Generate the welcome message based on the user's name

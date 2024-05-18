@@ -14,32 +14,31 @@
     <string name="chat_fragment">CHAT</string>
     <string name="settings_fragment">SETĂRI</string>
 
-    <string name="recom_test"> Gestionarea stresului și odihna adecvată: Încearcă să gestionezi stresul prin tehnici de relaxare,
-        cum ar fi meditația sau respirația profundă.
-        Asigură-te că dormi suficient pentru a-ți menține echilibrul hormonal și nivelul de energie.
-        Meditația și respirația profundă sunt doar două dintre tehnicile pe care le poți încerca pentru a-ți calma mintea și corpul în timpul momentelor tensionate.</string>
 
-    <string name="long_text">În calitate de medic, îmi doresc să subliniez importanța prioritizării sănătății tale.
-Este esențial să acorzi atenție semnelor și simptomelor care pot indica probleme de sănătate, și să nu amâni vizitele la medic.
-Prevenția este cheia pentru menținerea unei stări optime de sănătate,
-iar adoptarea unui stil de viață sănătos poate avea un impact semnificativ asupra bunăstării tale generale. Nu ezita să consulți
-un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta.
-Împreună, putem lucra pentru a asigura că te afli pe drumul cel mai bun către o viață sănătoasă și fericită.
-    În calitate de medic, îmi doresc să subliniez importanța prioritizării sănătății tale.
-Este esențial să acorzi atenție semnelor și simptomelor care pot indica probleme de sănătate, și să nu amâni vizitele la medic.
-Prevenția este cheia pentru menținerea unei stări optime de sănătate,
-iar adoptarea unui stil de viață sănătos poate avea un impact semnificativ asupra bunăstării tale generale. Nu ezita să consulți
-un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta.
-Împreună, putem lucra pentru a asigura că te afli pe drumul cel mai bun către o viață sănătoasă și fericită.
-    În calitate de medic, îmi doresc să subliniez importanța prioritizării sănătății tale.
-Este esențial să acorzi atenție semnelor și simptomelor care pot indica probleme de sănătate, și să nu amâni vizitele la medic.
-Prevenția este cheia pentru menținerea unei stări optime de sănătate,
-iar adoptarea unui stil de viață sănătos poate avea un impact semnificativ asupra bunăstării tale generale. Nu ezita să consulți
-un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta.
-Împreună, putem lucra pentru a asigura că te afli pe drumul cel mai bun către o viață sănătoasă și fericit</string>
 
     <string name="recom_title"> Gestionarea stresului </string>
 
+    <!--TEST-->
+    <string name="testLogin">{
+  "id": 123,
+  "firstName": "John",
+  "lastName": "Doe",
+  "cnp": "1234567890123",
+  "age": 30,
+  "street": "123 Main St",
+  "city": "Anytown",
+  "county": "County",
+  "country": "Country",
+  "phoneNumber": "123-456-7890",
+  "emailAddress": "john.doe@example.com",
+  "profession": "Engineer",
+  "workplace": "Acme Corp",
+  "password": "password123",
+  "accessType": "ADMIN"
+}</string>
+
+    <!--ERRORS-->
+    <string name="ERROR">Eroare</string>
 
     <!-- Main Layout (login) -->
     <string name="MAINllLogoImageView"> Logo Image </string>
@@ -57,6 +56,8 @@ un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta
     <string name="MAINifcvCBEmailImage"> Email corect </string>
     <string name="MAINllVersionTextView"> Version 0.11 </string>
     <string name="MAINllInfoTextView"> Vitalis - 2024/05/08 </string>
+
+    <string name="MAINloginGreeting"> Bine ai venit! </string>
 
     <!-- Registrare -->
     <string name="REGtcvTitleText"> Registrare </string>
@@ -282,12 +283,19 @@ un specialist pentru orice îngrijorare sau întrebare legată de sănătatea ta
     <string name="CPAifcvBackButton"> Înapoi </string>
 
     <!-- URLs-->
-    <string name="URLregistration"> http://192.168.1.247:4000/registration</string>
-    <string name="URLlogin"> http://192.168.1.247:4000/login </string>
-    <string name="URLchats"> http://192.168.1.247:4000/chats </string>
-    <string name="URLsearch"> http://192.168.1.247:4000/search </string>
-    <string name="URLmessages"> http://192.168.1.247:4000/mesaje </string>
-    <string name="URLsend"> http://192.168.1.247:4000/send </string>
+    <!--server address-->
+    <string name="CLOUD_SERVER"> http://192.168.1.247:4000</string>
+
+    <!--endpoints-->
+    <string name="GET_CHAT_HISTORY">/get_chat_history</string>
+    <string name="GET_CHAT_SEARCH"> /get_chat_search </string>
+    <string name="SIGN_UP"> /signup </string>
+    
+    <string name="URLregistration">/registration</string>
+    <string name="LOGIN"> /login </string>
+    <string name="URLchats"> /chats </string>
+    <string name="URLmessages"> /mesaje </string>
+    <string name="URLsend"> /send </string>
 
 
 </resources>
