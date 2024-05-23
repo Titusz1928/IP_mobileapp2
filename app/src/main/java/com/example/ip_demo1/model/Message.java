@@ -1,5 +1,7 @@
 package com.example.ip_demo1.model;
 
+import android.util.Log;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -37,8 +39,12 @@ public class Message
 
     public void setSendingDate(String dateToConvert)
     {
+        Log.d("MyTag",dateToConvert);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMAT, Locale.ENGLISH);
-        this.sendingDate = LocalDateTime.parse(dateToConvert, formatter);
+        //DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+        //this.sendingDate = LocalDateTime.parse(dateToConvert, formatter);
+        this.sendingDate=LocalDateTime.now();
+        Log.d("MyTag","setSendingDate: "+this.sendingDate.toString());
     }
 
     public void setSendingUserId(Integer sendingUserId)

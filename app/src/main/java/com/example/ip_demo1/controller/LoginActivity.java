@@ -15,6 +15,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.ip_demo1.R;
+import com.example.ip_demo1.constants.Constants;
 import com.example.ip_demo1.model.User;
 import com.example.ip_demo1.model.UserSingleton;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -46,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             buttonLogin.setEnabled(false);
             buttonLogin.setClickable(false);
 
-            url=getString(R.string.CLOUD_SERVER)+getString(R.string.LOGIN);
+            url= Constants.RemoteServerAddresses.CLOUD_SERVER+Constants.EndPoints.LOGIN;
 
             //creating JSON object
             JSONObject userLoginData = new JSONObject();

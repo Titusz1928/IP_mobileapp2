@@ -48,6 +48,8 @@ dependencies {
 
     implementation("com.fasterxml.jackson.core:jackson-databind:2.17.1")
 
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
 
 
 

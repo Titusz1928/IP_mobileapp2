@@ -211,7 +211,7 @@ public class ChatFragmentJ extends Fragment {
                 //we pass the email, prenume and id_conv to the SelectedChatJ activity
                 //intent.putExtra("email", email);
                 intent.putExtra("prenume", prenume);
-                intent.putExtra("id_conv",id_conv);
+                intent.putExtra("chat_id",id_conv);
                 startActivity(intent);
             }
         });

@@ -289,6 +289,7 @@
     <!--endpoints-->
     <string name="GET_CHAT_HISTORY">/get_chat_history</string>
     <string name="GET_CHAT_SEARCH"> /get_chat_search </string>
+    <string name="GET_CHAT"> /get_chat </string>
     <string name="SIGN_UP"> /signup </string>
     
     <string name="URLregistration">/registration</string>
